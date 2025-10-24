@@ -28,7 +28,7 @@ jobs:
           # Reduce noise and avoid 403 status API issues, only lint relevant languages for this repo
           VALIDATE_ALL_CODEBASE: false
           IGNORE_GITIGNORED_FILES: true
-          FILTER_REGEX_EXCLUDE: "(^demo/target/|^\.mvn/|^demo/\.vscode/)"
+          FILTER_REGEX_EXCLUDE: '(^demo/target/|^\.mvn/|^demo/\.vscode/)'
           # Disable linters you don't use right now
           VALIDATE_BASH_EXEC: false
           VALIDATE_CHECKOV: false
