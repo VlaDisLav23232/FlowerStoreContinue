@@ -29,14 +29,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           IGNORE_GITIGNORED_FILES: true
           FILTER_REGEX_EXCLUDE: '(^demo/target/|^\.mvn/|^demo/\.vscode/)'
-          # Disable linters you don't use right now
-          VALIDATE_BASH_EXEC: false
-          VALIDATE_CHECKOV: false
-          VALIDATE_JSCPD: false
-          VALIDATE_SHELL_SHFMT: false
-          # Keep core ones enabled
+          # Enable only the core linters we need (include mode)
           VALIDATE_JAVA: true
           VALIDATE_XML: true
           VALIDATE_YAML: true
-          # Temporarily disable Google Java Format until codebase is formatted
-          VALIDATE_GOOGLE_JAVA_FORMAT: false
